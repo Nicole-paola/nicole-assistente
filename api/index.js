@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const HF_TOKEN = process.env.HF_TOKEN;
-const HF_API_URL = 'https://api-inference.huggingface.co/models/mrm8488/t5-base-finetuned-question-generation-ap';
+const HF_API_URL = 'https://api-inference.huggingface.co/models/pierreguillou/llama2-7b-pt-chat';
 
 app.post('/chat', async (req, res) => {
   const prompt = req.body.prompt;
